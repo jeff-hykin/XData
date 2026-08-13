@@ -1,0 +1,12 @@
+# top level comment
+name: "Jeff"
+
+# a nested map
+address:
+    street: "123 Fake St"
+    city: "Austin"
+    geo:
+        lat: 30.2672
+        lon: -97.7431
+
+# trailing comment

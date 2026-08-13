@@ -1,0 +1,13 @@
+an_integer: 42
+a_negative: -17
+a_float: 3.14159
+a_boolean: true
+another_boolean: false
+nothing: null
+also_nothing: nil
+missing: undefined
+not_a_number: NaN
+big: infinity
+small: -infinity
+an_atom: @red
+another_atom: @some_long_atom_name

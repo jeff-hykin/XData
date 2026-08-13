@@ -1,0 +1,8 @@
+empty_list: []
+empty_map: {}
+numbers: [1, 2, 3]
+mixed: [1, "two", @three, true, null]
+nested_inline: [[1, 2], [3, 4]]
+inline_map: { a: 1, b: 2 }
+map_in_list: [{ x: 1 }, { y: 2 }]
+list_in_map: { items: [1, 2], done: false }

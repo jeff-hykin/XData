@@ -1,0 +1,19 @@
+groceries:
+    - "milk"
+    - "eggs"
+    # a comment between entries
+    - "bread"
+matrix:
+    -
+        - 1
+        - 2
+    -
+        - 3
+        - 4
+people:
+    -
+        name: "Ada"
+        born: 1815
+    -
+        name: "Grace"
+        born: 1906

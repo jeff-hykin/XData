@@ -1,0 +1,24 @@
+# as of 2026-08: parsing, byte-exact stringify, toJs (with reference resolution +
+# interpolation), and a mutation api (setKey/push/addComment) all work — see
+# decisions.md for the settled design calls and run/tests.ps1 for the test suite
+- TODO:
+    - splat (...) is still unimplemented
+    - inline creation of strings containing newlines (jsToXdataText throws; insert a block string node manually)
+    - adjectives currently parse/round-trip but carry no meaning in toJs (dropped)
+    - validators (certain node forms only being valid in certain contexts) are not enforced beyond what the parser rejects
+    - recursive references inside string interpolation are detected and throw ("Circular reference detected"); no lazy/partial resolution
+
+- everything centers around nodes:
+    - every value (including comments) are nodes
+    - every node must have a json representation that doesn't loose any information
+    - nodes can be found in different contexts (named contexts)
+    - nodes can have different forms/styles
+    - nodes can contain other nodes
+    - nodes can contain tokens, which is just a wrapper around a string
+- converters change the nodes:
+    - string (xdata) to node
+    - node to xdata string
+    - node to json
+    - json to node
+    - validate/verify nodes (certain forms of nodes/formats  are only valid in certain contexts)
+    

@@ -1,0 +1,8 @@
+weird:   "spaces before value"
+list:
+    -    900
+    - 901
+blank_lines_below:  1
+
+
+last: 2

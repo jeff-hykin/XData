@@ -1,0 +1,13 @@
+simple: "hello world"
+with_quote: """she said "hi" to me"""
+empty_string: ""
+figurative_plain: 'just text'
+block_literal: """
+    line one
+    line two
+        indented line
+    """
+block_figurative: '''
+    tab here {#tab} and done
+    '''
+final: "the end"

@@ -1,0 +1,13 @@
+name: "world"
+greeting: 'hello {#valueOf[name]}!'
+tabbed: 'a{#tab}b'
+newline_in_string: 'first{#newline}second'
+emoji: 'smile {#unicode[1F600]}'
+letter: 'cap {#ascii[65]}'
+copy_of_name: #valueOf[name]
+deep:
+    inner: 99
+deep_ref: #valueOf[deep, inner]
+scores: [10, 20, 30]
+second_score: #valueOf[scores, 1]
+chained: 'value is {#valueOf[deep, inner]}'

@@ -1,0 +1,14 @@
+# leading comment
+# second leading comment
+
+first: 1
+
+# comment in the middle
+
+second: 2
+list:
+    # comment inside a list
+    - "a"
+
+    - "b"
+# after everything
