@@ -2,6 +2,18 @@
 
 Human and machine editable (round-trip-able) yaml-like serialization format with string interpolation. Programmatically add/remove comments.
 
+```
+# server config
+name: "api-server"
+port: 8080
+host: #valueOf[name]
+greeting: 'hello from {#valueOf[name]}!'
+tags: [ @prod, @linux ]
+limits:
+    memory: 512
+    workers: 4
+```
+
 ```js
 import { parse, stringify, toJs, getNode, setKey, push, addComment } from "./main/main.js"
 
