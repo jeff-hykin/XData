@@ -2,7 +2,7 @@
 
 Human and machine editable (round-trip-able) yaml-like serialization format with string interpolation. Programmatically add/remove comments.
 
-```
+```yaml
 # server config
 name: "api-server"
 port: 8080
