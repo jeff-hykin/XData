@@ -1,8 +1,6 @@
 # XData
 
-A YAML-ish data format with lossless round-tripping: parse a file into a node tree, edit it
-programmatically (values, keys, list items, comments) and write it back byte-exact — or one-way
-convert it to plain JS values with references resolved and strings interpolated.
+Human and machine editable (round-trip-able) yaml-like serialization format with string interpolation. Programmatically add/remove comments.
 
 ```js
 import { parse, stringify, toJs, getNode, setKey, push, addComment } from "./main/main.js"
